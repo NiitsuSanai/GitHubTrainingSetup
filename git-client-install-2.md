@@ -11,7 +11,7 @@
  3. エクスプローラー・エリア：フォルダ・ファイルの操作
  4. サイドバー・エリア：拡張機能の追加の操作
 
-## :three: Visual Studio Codeの初期設定
+## :two: Visual Studio Codeの初期設定
 
 インストールしたVisual Studio Codeに以下の設定を行います。
 
@@ -22,13 +22,13 @@
 | 3 | ターミナル既定Shellの指定  | Bashを指定  |
 | 4 | ワークスペースの設定     | 作業フォルダの指定 |
 
-## :four: 日本語化
+## :three: 日本語化
 
 #### Visual Studio Code起動直後に日本語化設定
 ✔️ `インストールして再起動`をクリック<br>
 <img src="images/vscode_startup.png" width="70%">
     
-## :five: open in browser
+## :four: open in browser
 
 Visual Studio Codeで作成したHTMLをブラウザで表示するためのプラグインをインストールします。
 
@@ -40,7 +40,7 @@ Visual Studio Codeで作成したHTMLをブラウザで表示するためのプ�
 <img src="images/vscode_open_in_browser.png" width="60%">
 
 
-## :six: ターミナル既定Shellの指定
+## :five: ターミナル既定Shellの指定
 
 今回のトレーニングでは、Visual Studio Codeのターミナルで、Gitコマンド操作を実行します。<br>
 トレーニング内でLinuxコマンドを使用しているため、ターミナルでBashを使用できるように設定します。
@@ -65,7 +65,7 @@ Visual Studio Codeで作成したHTMLをブラウザで表示するためのプ�
  6. ✔️ ターミナルのShellが「Bash」に変更されていることを確認<br>
 <img src="images/vscode_terminal‗bash.png">
 
-##  :seven: 作業フォルダ（ワークスペース）の指定
+##  :six: 作業フォルダ（ワークスペース）の指定
 
 今回のトレーニングでは、Windowsユーザフォルダ下に「<u>git_training_dir</u>」を用意し<br>
 Visual Studio Codeの作業フォルダ（ワークスペース）として指定します。
