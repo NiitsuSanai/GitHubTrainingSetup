@@ -24,7 +24,7 @@ mkdir ~/.ssh
  2. ✔️ SSH鍵ファイル用のフォルダー（~/.ssh）に作成するコマンドを実行
 
 ``` bash
-ssh-keygen -t rsa -b 4096 -C "hoge@example.com" -f ~/.ssh/github.key
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/github.key
 ```
 
  3. ✔️ パスフレーズ入力と確認を求められるが、2回とも未入力で「エンターキー」をクリック
@@ -35,14 +35,14 @@ Enter same passphrase again:
 
 * SSH鍵作成の実行結果例
 ``` bash
-$ ssh-keygen -t rsa -b 4096 -C "hoge@example.com" -f ~/.ssh/github.key
+$ ssh-keygen -t rsa -b 4096 -f ~/.ssh/github.key
 Generating public/private rsa key pair.
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 Your identification has been saved in /c/Users/User/.ssh/github.key
 Your public key has been saved in /c/Users/User/.ssh/github.key.pub
 The key fingerprint is:
-SHA256:WuazyfjrOnq8dOnSZXX9B5ZUZczM0yAJnprhtIesLyU hoge@example.com
+SHA256:WuazyfjrOnq8dOnSZXX9B5ZUZczM0yAJnprhtIesLyU
 The key's randomart image is:
 +---[RSA 4096]----+
 |          .....B*|
@@ -79,7 +79,7 @@ cat ~/.ssh/github.key.pub
 * 公開鍵ファイルテキスト表示例
 ```bash
 $ cat ~/.ssh/github.key.pub
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC7B+Ej/hsY2qck7KZP/sdPGjfka0FteUHEVGIW10zNRFtFuxKb9u+euxVKXUPUpH0B8hKRIIWEogtl/HlysHNzGhfxLr1PTMEjlpYHkT2ufQhKfophVrR01lmwPg/8acZZWEUBZwYCJtc4w58WbzAFHSqhqziWmVNQOL58v+LHObhTqM9OS87bEEgvqWAxqxjEOF2NmGDXuRSlsySp2Yq/yZYM9iTuCA4keza0yOhjtfi1YEIzr1ljxXLq7Y5Yg+eKsymgBgw9/wVfF9DwcxpCAtDvxLwzR80NOQxV24SARWOTlRoS4sYqxjfhW6PX5cqMLG7qxv8dDYql2rrVvSIw2syPWKZOS1Ofyv1eoT4UE0CCZoSyBfNo9esiSGppBb1b9GH8kwP9HFlHiS8yRY0mRMH/CZXcAfSopKnYPm5t+ZSAw/0Y6KjU62lMAbAgA6nQm4eXsmthsOK7/aiUjD0GYRbnGezPo1hvNmVb+S+x6fG1VCOLm1sIpF31RcoF8KoElrOanQL1MbWPyJplrhGGp+NKZddbOnv2oATmr1mK2RIqnkb/pYNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX5jzGf00EESPtULBARgmYlRUFrGe/w== hoge@example.com
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC7B+Ej/hsY2qck7KZP/sdPGjfka0FteUHEVGIW10zNRFtFuxKb9u+euxVKXUPUpH0B8hKRIIWEogtl/HlysHNzGhfxLr1PTMEjlpYHkT2ufQhKfophVrR01lmwPg/8acZZWEUBZwYCJtc4w58WbzAFHSqhqziWmVNQOL58v+LHObhTqM9OS87bEEgvqWAxqxjEOF2NmGDXuRSlsySp2Yq/yZYM9iTuCA4keza0yOhjtfi1YEIzr1ljxXLq7Y5Yg+eKsymgBgw9/wVfF9DwcxpCAtDvxLwzR80NOQxV24SARWOTlRoS4sYqxjfhW6PX5cqMLG7qxv8dDYql2rrVvSIw2syPWKZOS1Ofyv1eoT4UE0CCZoSyBfNo9esiSGppBb1b9GH8kwP9HFlHiS8yRY0mRMH/CZXcAfSopKnYPm5t+ZSAw/0Y6KjU62lMAbAgA6nQm4eXsmthsOK7/aiUjD0GYRbnGezPo1hvNmVb+S+x6fG1VCOLm1sIpF31RcoF8KoElrOanQL1MbWPyJplrhGGp+NKZddbOnv2oATmr1mK2RIqnkb/pYNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX5jzGf00EESPtULBARgmYlRUFrGe/w==
 ```
 !!! GitHubに登録する公開鍵
     後ほど公開鍵のテキストをGitHubに登録します。
