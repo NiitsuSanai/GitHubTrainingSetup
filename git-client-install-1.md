@@ -16,6 +16,7 @@
 ## :two: Git for Windowsのインストール
 
 以下のダウンロードサイトからGit for Windowsのインストーラーをダウンロードして、インストールして下さい。
+> すべて項目をデフォルト設定でインストールして下さい。
 
 ###  📃 ダウンロードURL
 <a href="https://gitforwindows.org/" target=”_blank” rel="noopener">https://gitforwindows.org/</a>
@@ -23,6 +24,7 @@
 ## :three: Visual Studio Codeのインストール
 
 以下のダウンロードサイトからVisual Studio CodeのWindows用のインストーラーをダウンロードして、インストールして下さい。
+> すべて項目をデフォルト設定でインストールして下さい。
 
 ###  📃 ダウンロードURL
 <a href="https://code.visualstudio.com/download" target=”_blank” rel="noopener">https://code.visualstudio.com/download</a>
