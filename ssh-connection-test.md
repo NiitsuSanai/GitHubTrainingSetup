@@ -67,9 +67,9 @@ ls ~/.ssh/
 $ ls ~/.ssh/
 github.key  github.key.pub
 ```
-!!!Tip "SSH鍵ファイル"
-    :one: github.key は、SSH秘密鍵<br>
-    :two: github.key.pub は、SSH公開鍵
+* SSH鍵ファイル
+> github.key は、SSH秘密鍵<br>
+> github.key.pub は、SSH公開鍵
 
  5. ✔️ GitHubに登録する公開鍵ファイル内テキストを表示
 ``` bash
@@ -81,8 +81,8 @@ cat ~/.ssh/github.key.pub
 $ cat ~/.ssh/github.key.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC7B+Ej/hsY2qck7KZP/sdPGjfka0FteUHEVGIW10zNRFtFuxKb9u+euxVKXUPUpH0B8hKRIIWEogtl/HlysHNzGhfxLr1PTMEjlpYHkT2ufQhKfophVrR01lmwPg/8acZZWEUBZwYCJtc4w58WbzAFHSqhqziWmVNQOL58v+LHObhTqM9OS87bEEgvqWAxqxjEOF2NmGDXuRSlsySp2Yq/yZYM9iTuCA4keza0yOhjtfi1YEIzr1ljxXLq7Y5Yg+eKsymgBgw9/wVfF9DwcxpCAtDvxLwzR80NOQxV24SARWOTlRoS4sYqxjfhW6PX5cqMLG7qxv8dDYql2rrVvSIw2syPWKZOS1Ofyv1eoT4UE0CCZoSyBfNo9esiSGppBb1b9GH8kwP9HFlHiS8yRY0mRMH/CZXcAfSopKnYPm5t+ZSAw/0Y6KjU62lMAbAgA6nQm4eXsmthsOK7/aiUjD0GYRbnGezPo1hvNmVb+S+x6fG1VCOLm1sIpF31RcoF8KoElrOanQL1MbWPyJplrhGGp+NKZddbOnv2oATmr1mK2RIqnkb/pYNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX5jzGf00EESPtULBARgmYlRUFrGe/w==
 ```
-!!! GitHubに登録する公開鍵
-    後ほど公開鍵のテキストをGitHubに登録します。
+* GitHubに登録する公開鍵
+> 後ほど公開鍵のテキストをGitHubに登録します。
 
 
 ## :two: 【GitHub環境】GitHubにSSH公開鍵を登録
@@ -123,7 +123,7 @@ touch ~/.ssh/config
 code ~/.ssh/config
 ```
 
- 3. ✔️ github.com に接続時に使用するSSH秘密鍵ファイルを指定
+ 3. ✔️ github.com に接続時に使用するSSH秘密鍵ファイルを指定し、ファイルを保存
 ```yaml hl_lines="2 3 4"
 Host github.com
   HostName github.com
@@ -147,9 +147,9 @@ Host github.com
 ```
 * プロキシサーバー指定
 > HTTPSプロトコルを使用してプロキシサーバー経由で、GitHubに接続させます。
+----
 
-
- 4. ✔️ github.com に SSH接続時に使用するSSH秘密鍵ファイルを指定
+4. ✔️ github.com に SSH接続時に使用するSSH秘密鍵ファイルを指定
 
 ```bash
 ssh -T git@github.com
@@ -170,6 +170,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'github.com,13.114.40.48' (RSA) to the list of known hosts.        
 Hi GitHub_UserName! You've successfully authenticated, but GitHub does not provide shell access. 
 ```
+* 成功メッセージ
+> You've successfully authenticated
 
 ## :four: 【ローカル環境】その他のGit設定
 
