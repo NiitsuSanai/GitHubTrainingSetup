@@ -173,14 +173,20 @@ Hi GitHub_UserName! You've successfully authenticated, but GitHub does not provi
 
 ## :four: 【ローカル環境】その他のGit設定
 
- 1. ✔️ Gitクライアントのユーザ設定
+ 1. ✔️ Gitクライアントのユーザ設定例
 
 ```bash
 git config --global user.email "hoge@example.com"
-git config --global user.name "Hoge Hoge"
+git config --global user.name "Your Name"
 ```
 
- 2. ✔️ テキストファイルの改行コード変換設定
+* 自分のメールアドレスを指定
+> hoge@example.com
+
+* 自分の名前を指定
+> Your Name
+
+ 1. ✔️ テキストファイルの改行コード変換設定
 
 ```bash
 git config --global core.autoCRLF false
