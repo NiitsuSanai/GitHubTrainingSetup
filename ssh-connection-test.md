@@ -123,6 +123,13 @@ touch ~/.ssh/config
 code ~/.ssh/config
 ```
 
+* コマンド実行後、下記のエラーメッセージが表示される場合は、VisualStudioCodeを再起動してから再度、コマンドを実行してください。<br>
+
+``` bash
+bash: code: command not found
+```
+
+
  3. ✔️ github.com に接続時に使用するSSH秘密鍵ファイルを指定し、ファイルを保存
 ```yaml hl_lines="2 3 4"
 Host github.com

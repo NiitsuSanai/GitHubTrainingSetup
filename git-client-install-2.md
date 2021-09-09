@@ -91,6 +91,10 @@ mkdir $USERPROFILE/git_training_dir
 <hr>
  2. ✔️ Windowsユーザフォルダ下の「<u>git_training_dir</u>」を選択し「フォルダーの選択」クリック<br>
 <img src="images/vscode_open_folder_user.png" width="45%">
+
+* 下記画面が表示された場合は、"親フォルダー～"のチェックをONにした上で、"はい、作成者を信頼します"ボタンをクリック
+<img src="images/shinrai_dialog.png" width="45%">
+
 <hr>
  3. ✔️ エクスプローラーで「git_training_dir」が開かれている状態になっていることを確認
 <img src="images/vscode_explorer_open_folder.png" width="45%">
