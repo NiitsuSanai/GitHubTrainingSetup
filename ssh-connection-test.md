@@ -130,8 +130,8 @@ bash: code: command not found
 ```
 
 
- 3. ✔️ github.com に接続時に使用するSSH秘密鍵ファイルを指定し、ファイルを保存
- 今回は、「SSH over the HTTPS」にてGitHubに接続します。
+ 3. ✔️ github.com に接続時に使用するSSH秘密鍵ファイルを指定し、ファイルを保存<br>
+（今回は、「SSH over the HTTPS」にてGitHubに接続します）
 ```yaml hl_lines="2 3 4"
 Host github.com
   HostName ssh.github.com
