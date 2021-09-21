@@ -131,16 +131,19 @@ bash: code: command not found
 
 
  3. ✔️ github.com に接続時に使用するSSH秘密鍵ファイルを指定し、ファイルを保存
+ 今回は、「SSH over the HTTPS」にてGitHubに接続します。
 ```yaml hl_lines="2 3 4"
 Host github.com
-  HostName github.com
+  HostName ssh.github.com
   User git
+  Port 443
   IdentityFile ~/.ssh/github.key
 ```
 
 > SSH接続時の秘密鍵のパス指定
-  * User（ユーザ名）<br>
   * HostName（SSH接続するドメイン）<br>
+  * User（ユーザ名）<br>
+  * Port（ポート） 443を指定することで「SSH over the HTTPS」で接続<br>
   * IdentityFile（SSH秘密鍵のパス）
 
 ### 【参考】Windowsでプロキシサーバーを使用している場合の指定方法
